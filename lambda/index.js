@@ -10,7 +10,7 @@ const LaunchRequestHandler = {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speakOutput = 'Welcome to Hey Tube. ask to play a video to start listening';
+        const speakOutput = 'Welcome to Hey Tube. ask to play a video to begin listening';
         const repromptOutput = 'You can say, play the Whitesnake, to begin.'
         return handlerInput.responseBuilder
             .speak(speakOutput)
